@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>API UI</title>
+</head>
+
+<body>
+    <center>
+        <br>
+        <div id="box">
+            <div id="box2">
+                <div id="pageTitle">
+                    Class database
+                </div>
+                <form>
+                    <div class="input-group flex-nowrap input-group-lg col-4">
+                        <input class="btn btn-info btn-lg  col-12" type="button" name="Get all Classes" value="Get all Classes" onclick='buttonGetAll()'>
+                    </div>
+                    <div class="input-group flex-nowrap input-group-lg col-4">
+                        <input class="btn btn-info btn-lg col-3" type="button" name="get a class" value="Get a Class" onclick='buttonGet()'>
+                        <input type="number" class="form-control bg-info text-white shadow-lg  col-9" id="classID1" min="1" placeholder="classID"
+                            aria-label="Number" aria-describedby="number-input">
+                    </div>
+                    <div class="input-group flex-nowrap input-group-lg col-4">
+                        <input class="btn btn-info btn-lg col-3" type="button" name="create class" value="Create a Class" onclick="buttonCreate()">
+                        <input type="text" class="form-control bg-info text-white shadow-lg col-9" id="trainer1" placeholder="Trainer Name" aria-label="Name"
+                            aria-describedby="name-input">
+                    </div>
+                    <div class="input-group flex-nowrap input-group-lg col-4">
+                        <input class="btn btn-info btn-lg col-3" type="button" name="delete class" value="Delete a Class" onclick="buttonDelete()">
+                        <input type="number" class="form-control bg-info text-white shadow-lg col-9" id="classID2" min="1" placeholder="classID"
+                            aria-label="Number" aria-describedby="number-input">
+                    </div>
+                    <div class="input-group flex-nowrap input-group-lg col-4">
+                        <input class="btn btn-info btn-lg col-3" type="button" name="update class" value="Update a Class" onclick="buttonUpdate()">
+                        <input type="number" class="form-control bg-info text-white shadow-lg col-3" id="classID3" min="1" placeholder="classID"
+                            aria-label="Number" aria-describedby="number-input">
+                        <input type="text" class="form-control bg-info text-white shadow-lg col-6" id="trainer2" placeholder="Trainer Name" aria-label="Name"
+                            aria-describedby="name-input">
+                    </div>
+                </form>
+                <div id="transbox">
+                </div>
+                <br>
+                <div id="resultTitle">
+                    Results:
+                </div>
+                <div id="results">
+                </div>
+            </div>
+            <div id="transbox">
+            </div>
+        </div>
+        </div>
+    </center>
+    <script type="text/javascript" src="restAPI.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

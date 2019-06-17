@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Calculator
+    </title>
+</head>
+
+<body>
+    <center>
+        <div id=box>
+            <form name="calculator">
+                <div id="pageTitle">
+                    Calculator
+                </div>
+                <div class="input-group flex-nowrap input-group-lg col-4">
+                    <input type="text" class="form-control bg-info text-white shadow-lg" name="number1"
+                        placeholder="First Number" aria-label="Number1" aria-describedby="number-input">
+                </div>
+                <div class="input-group flex-nowrap input-group-lg col-4">
+                    <input type="text" class="form-control bg-info text-white shadow-lg" name="number2"
+                        placeholder="Seccond Number" aria-label="Number2" aria-describedby="number-input">
+                </div>
+                <input class="btn btn-info btn-lg" type="button" name="multiply" value="*" onclick="multiplyer()">
+                <input class="btn btn-primary btn-lg" type="button" name="add" value="+" onclick="adder()">
+                <input class="btn btn-info btn-lg" type="button" name="divide" value="/" onclick="divider()">
+                <input class="btn btn-primary btn-lg" type="button" name="subtract" value="-" onclick="subtracter()">
+            </form>
+            <div id="transbox">
+            </div>
+        </div>
+    </center>
+    <script type="text/javascript" src="calc.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
